@@ -1,0 +1,14 @@
+
+version: '3'
+
+services:
+
+  cups:
+    build: .
+    container_name: airprint-bridge
+    network_mode: host
+    environment:
+      - CUPSADMIN=root
+      - CUPSPASSWORD=123456
+    ports:
+      - 631:631
