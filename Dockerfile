@@ -16,7 +16,7 @@ RUN set -eux; \
       avahi-discover \
     ; \
     # install printer driver
-    dpkg -i /root/drivers/EPSON_L3250/*armhf.deb; \
+    dpkg -i /root/drivers/EPSON_L3250/*arm64.deb; \
     rm -rf /root/drivers; \
     # clean
     apt-get clean; \
