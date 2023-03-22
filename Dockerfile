@@ -3,7 +3,7 @@ FROM ubuntu:18.04
 
 COPY drivers/ /root/drivers/
 COPY config/cupsd.conf /etc/cups/cupsd.conf
-COPY services/*.service /etc/avahi/services/
+# COPY services/*.service /etc/avahi/services/
 COPY entrypoint.sh /entrypoint.sh
 
 RUN set -eux; \
