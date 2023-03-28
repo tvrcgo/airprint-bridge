@@ -6,9 +6,9 @@ services:
   cups:
     build: .
     container_name: airprint-bridge
-    network_mode: host
     environment:
-      - CUPSADMIN=root
-      - CUPSPASSWORD=123456
+      - CUPS_USERNAME=cups
+      - CUPS_PASSWORD=cups
     ports:
-      - 631:631
+      - 10631:631
+      - 15353:5353/udp

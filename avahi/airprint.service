@@ -1,0 +1,34 @@
+<?xml version="1.0" standalone='no'?><!--*-nxml-*-->
+<!DOCTYPE service-group SYSTEM "avahi-service.dtd">
+<service-group>
+  <name>L3251-AirPrint</name>
+  <service>
+    <type>_ipp._tcp</type>
+    <subtype>_universal._sub._ipp._tcp</subtype>
+    <port>631</port>
+    <txt-record>txtver=1</txt-record>
+    <txt-record>qtotal=1</txt-record>
+    <txt-record>rp=printers/EPSON-L3251</txt-record>
+    <txt-record>ty=EPSON-L3251</txt-record>
+    <txt-record>adminurl=http://192.168.2.172:10631/printers/EPSON-L3251</txt-record>
+    <txt-record>note=EPSON-L3251</txt-record>
+    <txt-record>priority=0</txt-record>
+    <txt-record>product=(GPL Ghostscript)</txt-record>
+    <txt-record>printer-state=3</txt-record>
+    <txt-record>printer-type=4108</txt-record>
+    <txt-record>Transparent=T</txt-record>
+    <txt-record>Binary=T</txt-record>
+    <txt-record>Fax=F</txt-record>
+    <txt-record>Color=T</txt-record>
+    <txt-record>Duplex=T</txt-record>
+    <txt-record>Staple=F</txt-record>
+    <txt-record>Copies=T</txt-record>
+    <txt-record>Collate=F</txt-record>
+    <txt-record>Punch=F</txt-record>
+    <txt-record>Bind=F</txt-record>
+    <txt-record>Sort=F</txt-record>
+    <txt-record>Scan=F</txt-record>
+    <txt-record>pdl=application/octet-stream,application/pdf,application/vnd.cups-raster,application/postscript,image/jpeg,image/png,image/urf,image/tiff,image/gif,text/plain,text/html</txt-record>
+    <txt-record>URF=none</txt-record>
+  </service>
+</service-group>

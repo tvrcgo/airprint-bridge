@@ -1,8 +1,8 @@
-#!/sbin/init
+#!/bin/bash
+set -eux
 
-systemctl start cups
-systemctl enable cups
-
+# start avahi
 /usr/sbin/avahi-daemon --daemonize
 
+# start cups
 /usr/sbin/cupsd -f
